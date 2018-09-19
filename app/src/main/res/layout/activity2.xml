@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <Button
+        android:id="@+id/goHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginStart="137dp"
+        android:text="go back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.alexa.test.CanvasView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="431dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="clearCanvas"
+        android:text="CLEAR CANVAS"
+        app:layout_constraintEnd_toEndOf="@+id/goHome"
+        app:layout_constraintStart_toStartOf="@+id/goHome"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
